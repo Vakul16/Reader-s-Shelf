@@ -22,7 +22,7 @@ class BookInfo extends Component {
   getDescription = () => {
     const bookId = this.props.bookData.best_book.id;
     const requestUri =
-      `https://cors-anywhere.herokuapp.com/` +
+      // `https://cors-anywhere.herokuapp.com/` +
       `https://www.goodreads.com/book/show/${bookId}?key=${'d0fOzsPuJxLvF5CvZt8Sbg'}`;
     Axios.get(requestUri)
       .then(res => {
